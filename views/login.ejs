@@ -1,0 +1,76 @@
+<%- include("partials/lsrHeader.ejs"); -%>
+
+<body>
+  <!-- LOGO -->
+  <header class="lsr-header">
+    <a href="/">
+      <img
+        class="lsr-logo"
+        alt="Canteen Cravings Logo"
+        src="img/logos/CanteenCravesLONG-logo.png"
+      />
+    </a>
+  </header>
+
+  <div class="alert-box">
+    <p class="alert"></p>
+  </div>
+
+  <!-- lsr -->
+  <section class="section-lsr">
+    <div class="container">
+      <div class="lsr">
+        <!-- BACKGROUND IMAGE -->
+        <div
+          class="lsr-img-box"
+          role="img"
+          aria-label="artwork saying I Love Food"
+        ></div>
+
+        <!-- FORM -->
+        <div class="lsr-text-box">
+          <h2 class="heading-secondary">Login</h2>
+
+          <form class="lsr-form" name="lsr">
+            <div>
+              <label for="email">Email Address</label>
+              <input
+                class="email"
+                id="email"
+                type="email"
+                placeholder="johndoe@gmail.com"
+                name="email"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="password">Password</label>
+              <input
+                class="password"
+                id="password"
+                type="password"
+                placeholder="password"
+                name="password"
+                required
+              />
+            </div>
+            <button class="btn btn-form btn-lsr submitBtn">Login</button>
+          </form>
+
+          <div class="lsr-foot">
+            <p>
+              Forgot password?
+              <a href="/resetPassword">Reset Password</a>
+            </p>
+
+            <p>Create an account? <a href="/register">Sign-up</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="/js/form.js"></script>
+</body>
+
+<%- include("partials/lsrFooter.ejs"); -%>

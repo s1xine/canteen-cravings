@@ -1,0 +1,334 @@
+/*
+
+--01 TYPOGRAPHY SYSTEM
+
+-Font sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-Font weights:
+deafult:400
+medium:500
+semi-bold:600
+bold:700
+
+
+-Line heights:
+default:1
+small:1.05
+medium: 1.2
+large:1.8
+
+para defualt: 1.6
+
+--02 COULOURS
+
+-Primary- #4263eb
+-Tints: #eceffd #c6d0f9
+-Shades: #3B5BDB (FOR Texts) #2e45a5 #3b5bdb
+-Accents:#d0ebff #a5d8ff
+-Greys:
+
+#767676 (lightest grey allowed on #fff)
+#888
+#555 (lightest grey allowed on #fdf2e9)
+#333
+#6f6f6f
+
+
+--03 SHAODOWS
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--04 BORDER RADIUS:9px
+
+
+--05 WHITESPACE
+-SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+--06 ANIMATION-
+TIMES-
+0.3S 
+0.4S
+
+--07 GRADIENT-
+ background-image: linear-gradient(to right bottom,#8ea1f3, #4263eb);
+ background-image: linear-gradient(
+      to right bottom,
+      hsla(229, 81%, 75%, 0.35),
+      rgba(66, 100, 235, 0.35)
+    ),
+    url("../img/eating.jpg");
+*/
+
+/***********************/
+/* GENERIC SECTION */
+/***********************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* we changed that 1 rem = 10px
+  instead of deault 1rem = 16px */
+
+  /* 10px /16px = 0.625 --> 0.625*100 = 62.5% 
+
+  Percentage of user's browser font size setting.*/
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  /*  DOES NOT WORK FOR SAFARI BROWSERS*/
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+/***************************/
+/* GENERIC REUSABLE COMPONENTS */
+/***************************/
+.navbar-nav > button {
+  width: fit-content;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 4rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 3.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #3b5bdb;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+/* BUTTON */
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  font-weight: 600;
+
+  /* should be on original state */
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
+
+  /* btn */
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #4263eb;
+  color: white;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: #3b5bdb;
+  color: white;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  color: #555;
+  background-color: #fff;
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+  background-color: #fdf2e9;
+  /* border:3px solid white; */
+
+  /* Trick to add border inside the button */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn-form {
+  background-color: #283b8d;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn-form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+/* LINKS */
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #4263eb;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.2rem;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #3b5bdb;
+  border-bottom: 1px solid transparent;
+}
+
+/* LIST */
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #4263eb;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid-center-vertically {
+  align-items: center;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+strong {
+  font-weight: 500;
+}
+
+/* MARGIN HELPERS */
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.margin-bottom-big {
+  margin-bottom: 9.6rem !important;
+}
+
+.side-paddings {
+  padding: 0 14rem;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(78, 112, 247, 0.4);
+}
+
+/****************************************************/
+/* FOR LOGIN, SINGUP AND RESET PASSWORD PAGES */
+/****************************************************/
+
+.lsr-header {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lsr-logo {
+  height: 10rem;
+}
+
+.lsr-foot {
+  margin: 2rem 0 0 0.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.lsr-foot a {
+  color: #333;
+}

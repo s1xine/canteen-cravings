@@ -1,0 +1,331 @@
+<%- include("partials/header.ejs");-%>
+<body>
+  <%- include("partials/navbar.ejs");-%>
+  <main>
+    <!-- HERO -->
+    <section class="section-hero">
+      <div class="hero">
+        <div class="hero-text-box">
+          <h1 class="heading-primary">
+            Never hide your cravings for delicious food, ORDER NOW!
+          </h1>
+          <p class="hero-description">
+            Order your favourite fast food from your desired canteen any time
+            from any where and collect it from your respective canteens once
+            it's ready. For faculties get it delievered to your cabin.
+          </p>
+          <a href="#cta" class="btn btn-full margin-right-sm">Order Now</a>
+        </div>
+
+        <!-- HERO IMAGE -->
+        <div class="hero-img-box">
+          <!-- OPTIONS TO THE BROWSER IF IT DOES NOT SUPPORT webp FORMATE -->
+          <picture>
+            <source srcset="img/hero/hero-sxb.webp" type="image/webp" />
+            <source srcset="img/hero/hero-sxb.png" type="image/png" />
+
+            <img
+              src="img/hero/hero-sxb.png"
+              class="hero-img"
+              alt="Image of bhel, pav bhaji and sandwich."
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- CANTEENS -->
+    <section class="section-canteens" id="canteens">
+      <div class="container center-text">
+        <span class="subheading">CANTEENS</span>
+        <h2 class="heading-secondary">Order from your favourite canteen</h2>
+      </div>
+
+      <div class="container grid grid-2-cols side-paddings">
+        <!-- SDBCE -->
+        <div class="canteen">
+          <a href="/sdbce">
+            <img
+              src="img/canteens/SDBCE.webp"
+              class="canteen-img"
+              alt="SDBCE Canteen"
+            />
+            <div class="canteen-content">
+              <div class="canteen-tags">
+                <span class="tag tag-vegetarian">Vegetarian</span>
+              </div>
+              <p class="canteen-title">SDBCE Canteen</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- SDBCT -->
+        <div class="canteen">
+          <a href="/sdbct">
+            <img
+              src="img/canteens/SDCBT.webp"
+              class="canteen-img"
+              alt="SDBCT Canteen"
+            />
+            <div class="canteen-content">
+              <div class="canteen-tags">
+                <span class="tag tag-vegetarian">Vegetarian</span>
+              </div>
+              <p class="canteen-title">SDBCT Canteen</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--SERVICES-->
+    <section class="section-services" id="services">
+      <div class="container">
+        <span class="subheading">Services</span>
+        <h2 class="heading-secondary">Services of canteens</h2>
+      </div>
+
+      <div class="container grid grid-3-cols">
+        <div class="feature">
+          <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
+          <p class="feature-title">Local and organic</p>
+          <p class="feature-text">
+            Our cooks only use local, fresh, and organic products to prepare
+            your canteens.
+          </p>
+        </div>
+
+        <div class="feature">
+          <ion-icon class="feature-icon" name="hourglass-outline"></ion-icon>
+          <p class="feature-title">On time delievery</p>
+          <p class="feature-text">
+            Always get your canteens on time, never miss out on your delicious
+            food.
+          </p>
+        </div>
+
+        <div class="feature">
+          <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+          <p class="feature-title">No waste</p>
+          <p class="feature-text">
+            Canteens only use reusable containers to package all your canteens.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section-testimonials" id="testimonials">
+      <div class="container">
+        <div class="tesimonials-container">
+          <span class="subheading">testimonials</span>
+          <h2 class="heading-secondary">Testimonials given by students</h2>
+
+          <div class="testimonials">
+            <figure class="testimonial">
+              <blockquote class="testimonial-text">
+                Canteens have marvelous food that is too being inexpensive and
+                great-tasting.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Akash Nimare</p>
+            </figure>
+
+            <figure class="testimonial">
+              <blockquote class="testimonial-text">
+                SDBCT Canteen have great food. It tastes amazing and not to
+                worry about quality of food anymore!
+              </blockquote>
+              <p class="testimonial-name">&mdash; Akshay Gurjar</p>
+            </figure>
+
+            <figure class="testimonial">
+              <blockquote class="testimonial-text">
+                Canteens have some finnest cooks. The sandwiches, paav bhaji and
+                not to mention the bhel of SDBCT are just the best.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Medona Abraham</p>
+            </figure>
+
+            <figure class="testimonial">
+              <blockquote class="testimonial-text">
+                Both canteens have their own speciality like poha and baked
+                samosa of SDBCE and as of SDBCT canteen the sandwiches, the bhel
+                and chola bhatura tastes delicious.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Kumkum Tiwari</p>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section-gallery" id="gallery">
+      <div class="container">
+        <span class="subheading">Gallery</span>
+        <h2 class="heading-secondary">Captured happiness</h2>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery-item">
+          <img
+            class="gallery-img"
+            src="img/gallery/gallery-1.jpg"
+            alt="photo of food"
+          />
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            class="gallery-img"
+            src="img/gallery/gallery-2.jpg"
+            alt="photo of food"
+          />
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            class="gallery-img"
+            src="img/gallery/gallery-3.jpg"
+            alt="photo of food"
+          />
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            class="gallery-img"
+            src="img/gallery/gallery-4.jpg"
+            alt="photo of food"
+          />
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            class="gallery-img"
+            src="img/gallery/gallery-5.jpg"
+            alt="photo of food"
+          />
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            class="gallery-img"
+            src="img/gallery/gallery-6.jpg"
+            alt="photo of food"
+          />
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            class="gallery-img"
+            src="img/gallery/gallery-7.jpg"
+            alt="photo of food"
+          />
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            class="gallery-img"
+            src="img/gallery/gallery-8.jpg"
+            alt="photo of food"
+          />
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            class="gallery-img"
+            src="img/gallery/gallery-9.jpg"
+            alt="photo of food"
+          />
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            class="gallery-img"
+            src="img/gallery/gallery-10.jpg"
+            alt="photo of food"
+          />
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            class="gallery-img"
+            src="img/gallery/gallery-11.jpg"
+            alt="photo of food"
+          />
+        </figure>
+
+        <figure class="gallery-item">
+          <img
+            class="gallery-img"
+            src="img/gallery/gallery-12.jpg"
+            alt="photo of food"
+          />
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <!-- CTA -->
+  <section class="section-cta" id="cta">
+    <div class="lsr register">
+      <!-- FORM -->
+      <div class="lsr-text-box">
+        <h2 class="heading-secondary">Sign up!</h2>
+        <p class="lsr-text">
+          Sign up and order your food from anywhere, anytime.
+        </p>
+
+        <form class="lsr-form" name="lsr">
+          <div>
+            <label for="full-name">Full Name</label>
+            <input
+              id="full-name"
+              type="text"
+              placeholder="John Doe"
+              name="full-name"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email">Email Address</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="johndoe@gmail.com"
+              name="email"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="password">Password</label>
+            <input
+              id="password"
+              type="password"
+              placeholder="password"
+              name="password"
+              required
+            />
+          </div>
+
+          <button class="btn btn-form btn-lsr">Sign up</button>
+        </form>
+
+        <div class="lsr-foot">
+          <p>Already have an account? <a href="/login">Login</a></p>
+        </div>
+      </div>
+
+      <!-- BACKGROUND IMAGE -->
+      <div
+        class="sign-up-img-box"
+        role="img"
+        aria-label="artwork of a girl."
+      ></div>
+    </div>
+  </section>
+</body>
+
+<%- include("partials/footer.ejs");-%>

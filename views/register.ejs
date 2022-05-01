@@ -1,0 +1,86 @@
+<%- include("partials/lsrHeader.ejs"); -%>
+
+<body>
+  <!-- LOGO -->
+  <header class="lsr-header">
+    <a href="/">
+      <img
+        class="lsr-logo"
+        alt="Canteen Cravings Logo"
+        src="img/logos/CanteenCravesLONG-logo.png"
+      />
+    </a>
+  </header>
+
+  <div class="alert-box">
+    <p class="alert"></p>
+  </div>
+
+  <!-- SIGNUP -->
+  <section class="section-lsr">
+    <div class="container">
+      <div class="lsr register">
+        <!-- FORM -->
+        <div class="lsr-text-box">
+          <h2 class="heading-secondary">Sign up!</h2>
+          <p class="lsr-text">
+            Sign up and order your food from anywhere, anytime.
+          </p>
+
+          <form class="lsr-form" name="lsr">
+            <div>
+              <label for="full-name">Full Name</label>
+              <input
+                class="fname"
+                id="full-name"
+                type="text"
+                placeholder="John Doe"
+                name="full-name"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email">Email Address</label>
+              <input
+                class="email"
+                id="email"
+                type="email"
+                placeholder="johndoe@gmail.com"
+                name="email"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="password">Password</label>
+              <input
+                class="password"
+                id="password"
+                type="password"
+                placeholder="password"
+                name="password"
+                required
+              />
+            </div>
+
+            <button class="btn btn-form btn-lsr submitBtn">Sign up</button>
+          </form>
+
+          <div class="lsr-foot">
+            <p>Already have an account? <a href="/login">Login</a></p>
+          </div>
+        </div>
+
+        <!-- SIDE IMAGE -->
+        <div
+          class="sign-up-img-box"
+          role="img"
+          aria-label="artwork of a girl."
+        ></div>
+      </div>
+    </div>
+  </section>
+  <script src="/js/form.js"></script>
+</body>
+<%- include("partials/lsrFooter.ejs"); -%>
