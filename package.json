@@ -2,11 +2,11 @@
   "name": "canteen-cravings-login-test",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm start"
   },
-  "author": "",
+  "author": "s1xine",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
