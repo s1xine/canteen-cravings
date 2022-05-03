@@ -27,16 +27,15 @@
             Sign up and order your food from anywhere, anytime.
           </p>
 
-          <form class="lsr-form" name="lsr">
+          <form class="lsr-form" name="resiter-form" action="/" method="post">
             <div>
               <label for="full-name">Full Name</label>
               <input
-                class="fname"
-                id="full-name"
+                class="full_name"
+                id="full_name"
                 type="text"
                 placeholder="John Doe"
-                name="full-name"
-                required
+                name="fname"
               />
             </div>
 
@@ -48,7 +47,6 @@
                 type="email"
                 placeholder="johndoe@gmail.com"
                 name="email"
-                required
               />
             </div>
 
@@ -60,11 +58,16 @@
                 type="password"
                 placeholder="password"
                 name="password"
-                required
               />
             </div>
 
-            <button class="btn btn-form btn-lsr submitBtn">Sign up</button>
+            <button
+              class="button button-form button-lsr submitBtn"
+              id="reg-button"
+              onclick="register()"
+            >
+              Sign up
+            </button>
           </form>
 
           <div class="lsr-foot">
@@ -81,6 +84,15 @@
       </div>
     </div>
   </section>
-  <script src="/js/form.js"></script>
 </body>
+
+<!-- JS -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="/js/form.js"></script>
+
 <%- include("partials/lsrFooter.ejs"); -%>

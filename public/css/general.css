@@ -96,9 +96,6 @@ body {
 /***************************/
 /* GENERIC REUSABLE COMPONENTS */
 /***************************/
-.navbar-nav > button {
-  width: fit-content;
-}
 
 .heading-primary,
 .heading-secondary,
@@ -137,9 +134,15 @@ body {
 }
 
 /* BUTTON */
-.btn,
-.btn:link,
-.btn:visited {
+.btn {
+  padding: 1rem 2.8rem;
+  border-radius: 9px;
+  background-color: #4263eb;
+}
+
+.button,
+.button:link,
+.button:visited {
   display: inline-block;
   text-decoration: none;
   font-size: 2rem;
@@ -151,32 +154,32 @@ body {
   /* transition: background-color 0.3s; */
   transition: all 0.3s;
 
-  /* btn */
+  /* button */
   cursor: pointer;
   border: none;
   font-family: inherit;
 }
 
-.btn-full:link,
-.btn-full:visited {
+.button-full:link,
+.button-full:visited {
   background-color: #4263eb;
   color: white;
 }
 
-.btn-full:hover,
-.btn-full:active {
+.button-full:hover,
+.button-full:active {
   background-color: #3b5bdb;
   color: white;
 }
 
-.btn-outline:link,
-.btn-outline:visited {
+.button-outline:link,
+.button-outline:visited {
   color: #555;
   background-color: #fff;
 }
 
-.btn-outline:hover,
-.btn-outline:active {
+.button-outline:hover,
+.button-outline:active {
   background-color: #fdf2e9;
   /* border:3px solid white; */
 
@@ -184,14 +187,13 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
-.btn-form {
+.button-form {
   background-color: #283b8d;
   color: #fdf2e9;
   align-self: end;
-  padding: 1.2rem;
 }
 
-.btn-form:hover {
+.button-form:hover {
   background-color: #fff;
   color: #555;
 }

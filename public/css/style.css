@@ -26,14 +26,14 @@
   display: flex;
   gap: 4rem;
   align-items: center;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .main-nav-link:link,
 .main-nav-link:visited {
   text-decoration: none;
   color: #333;
-  font-weight: 500;
-  font-size: 1.8rem;
   transition: all 0.3s;
 }
 
@@ -362,7 +362,7 @@
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.363);
 }
 
-.btn-lsr {
+.button-lsr {
   margin-top: 1rem;
 }
 

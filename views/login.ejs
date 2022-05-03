@@ -31,7 +31,7 @@
         <div class="lsr-text-box">
           <h2 class="heading-secondary">Login</h2>
 
-          <form class="lsr-form" name="lsr">
+          <form class="lsr-form" name="login-form" action="/" method="post">
             <div>
               <label for="email">Email Address</label>
               <input
@@ -40,7 +40,6 @@
                 type="email"
                 placeholder="johndoe@gmail.com"
                 name="email"
-                required
               />
             </div>
 
@@ -52,16 +51,20 @@
                 type="password"
                 placeholder="password"
                 name="password"
-                required
               />
             </div>
-            <button class="btn btn-form btn-lsr submitBtn">Login</button>
+            <button
+              class="button button-form button-lsr submitBtn"
+              onclick="login()"
+            >
+              Login
+            </button>
           </form>
 
           <div class="lsr-foot">
             <p>
               Forgot password?
-              <a href="/resetPassword">Reset Password</a>
+              <a href="/forgotPassword">Reset Password</a>
             </p>
 
             <p>Create an account? <a href="/register">Sign-up</a></p>
@@ -70,7 +73,17 @@
       </div>
     </div>
   </section>
-  <script src="/js/form.js"></script>
 </body>
+
+<!-- JS -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="/js/form.js"></script>
 
 <%- include("partials/lsrFooter.ejs"); -%>
