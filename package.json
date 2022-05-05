@@ -8,6 +8,9 @@
   },
   "author": "s1xine",
   "license": "ISC",
+  "engines": {
+    "node": "16.14.2"
+  },
   "dependencies": {
     "alert": "^5.0.10",
     "body-parser": "^1.20.0",

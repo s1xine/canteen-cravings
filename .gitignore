@@ -50,6 +50,13 @@
 .*
 ~*
 
+
+/node_modules
+npm-debug.log
+.DS_Store
+/*.env
+
+
 # ignore node/grunt dependency directories
 node_modules/
 
