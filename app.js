@@ -11,7 +11,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/userDB"), { useNewUrlParser: true };
+mongoose.connect(
+  "mongodb+srv://admin-s1xine:admin@canteen-cravings.g2rak.mongodb.net/userDB"
+),
+  { useNewUrlParser: true };
 
 const userSchema = new mongoose.Schema({
   fname: String,
