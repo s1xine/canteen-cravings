@@ -42,10 +42,16 @@
             </li>
 
             <li class="nav-item">
-              <a href="/login" class="btn btn-primary btn-lg main-nav-list"
-                >Login</a
-              >
+              <div class="dropdown">
+              <a class=" dropdown-toggle text-decoration-none" type="button" id="user" data-bs-toggle="dropdown" aria-expanded="false"><ion-icon name="person-outline"></ion-icon>USER</a>
+              <ul class="dropdown-menu" aria-labelledby="user">
+              <li><a class="dropdown-item" href="/cart">My Cart</a></li>
+              <li><a class="dropdown-item" href="/myprofile">My Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/">Logout</a></li>
+              </ul>
             </li>
+          </div>
           </ul>
         </div>
       </div>
@@ -65,7 +71,7 @@
             from any where and collect it from your respective canteens once
             it's ready. For faculties get it delievered to your cabin.
           </p>
-          <a href="#cta" class="button button-full margin-right-sm"
+          <a href="#canteens" class="button button-full margin-right-sm"
             >Order Now</a
           >
         </div>
@@ -97,7 +103,7 @@
       <div class="container grid grid-2-cols side-paddings">
         <!-- SDBCE -->
         <div class="canteen">
-          <a href="/login">
+          <a href="/sdbce">
             <img
               src="img/canteens/SDBCE.jpg"
               class="canteen-img"
@@ -114,7 +120,7 @@
 
         <!-- SDBCT -->
         <div class="canteen">
-          <a href="/login">
+          <a href="/sdbct">
             <img
               src="img/canteens/SDCBT.jpg"
               class="canteen-img"
@@ -319,74 +325,9 @@
     </section>
   </main>
 
-  <!-- CTA -->
-  <section class="section-cta" id="cta">
-    <div class="lsr register">
-      <!-- FORM -->
-      <div class="lsr-text-box">
-        <h2 class="heading-secondary">Sign up!</h2>
-        <p class="lsr-text">
-          Sign up and order your food from anywhere, anytime.
-        </p>
-
-        <form
-          class="lsr-form"
-          name="resiter-form"
-          action="/register"
-          method="POST"
-        >
-          <div>
-            <label for="full-name">Full Name</label>
-            <input
-              id="full-name"
-              type="text"
-              placeholder="John Doe"
-              name="full-name"
-              required
-            />
-          </div>
-
-          <div>
-            <label for="email">Email Address</label>
-            <input
-              id="email"
-              type="email"
-              placeholder="johndoe@gmail.com"
-              name="email"
-              required
-            />
-          </div>
-
-          <div>
-            <label for="password">Password</label>
-            <input
-              id="password"
-              type="password"
-              placeholder="password"
-              name="password"
-              required
-            />
-          </div>
-
-          <button class="button button-form button-lsr">Sign up</button>
-        </form>
-
-        <div class="lsr-foot">
-          <p>Already have an account? <a href="/login">Login</a></p>
-        </div>
-      </div>
-
-      <!-- BACKGROUND IMAGE -->
-      <div
-        class="sign-up-img-box"
-        role="img"
-        aria-label="artwork of a girl."
-      ></div>
-    </div>
-  </section>
-
   <!-- JS -->
   <script src="/js/script.js"></script>
+ 
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

@@ -27,22 +27,25 @@
         <div class="lsr-text-box">
           <h2 class="heading-secondary">Login</h2>
 
-          <form class="lsr-form" name="login-form" action="/" method="post">
+          <form
+            class="lsr-form"
+            name="login-form"
+            action="/login"
+            method="POST"
+          >
             <div>
               <label for="email">Email Address</label>
               <input
-                class="email"
                 id="email"
                 type="email"
                 placeholder="johndoe@gmail.com"
-                name="email"
+                name="username"
               />
             </div>
 
             <div>
               <label for="password">Password</label>
               <input
-                class="password"
                 id="password"
                 type="password"
                 placeholder="password"
@@ -58,10 +61,10 @@
           </form>
 
           <div class="lsr-foot">
-            <p>
+            <!-- <p>
               Forgot password?
               <a href="/forgotPassword">Reset Password</a>
-            </p>
+            </p> -->
 
             <p>Create an account? <a href="/register">Sign-up</a></p>
           </div>
@@ -72,14 +75,6 @@
 </body>
 
 <!-- JS -->
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
 <script src="/js/form.js"></script>
 
 <%- include("partials/lsrFooter.ejs"); -%>

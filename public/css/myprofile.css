@@ -1,0 +1,12 @@
+body {
+  background: #2e45a5;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #4263eb;
+}
+
+.labels {
+  font-size: 11px;
+}
