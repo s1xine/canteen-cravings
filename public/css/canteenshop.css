@@ -1,3 +1,7 @@
+body {
+  background-image: none !important;
+}
+
 .social-links {
   list-style: none;
   display: flex;
@@ -7,14 +11,22 @@
 
 .social-icon {
   color: #767676;
-  height: 1.8rem;
-  width: 1.8rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .copyright {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #767676;
   text-align: center;
+}
+
+.card {
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 /*!
