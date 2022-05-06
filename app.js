@@ -54,6 +54,9 @@ app.get("/login", function (req, res) {
 app.get("/register", function (req, res) {
   res.render("register", { pageTitle: "Register" });
 });
+app.get("/logindex", function (req, res) {
+  res.render("logindex");
+});
 
 app.post("/register", function (req, res) {
   const newUser = new User({
