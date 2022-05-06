@@ -66,7 +66,7 @@ app.post("/register", function (req, res) {
     if (err) {
       console.log(err);
     } else {
-      res.render("logIndex");
+      res.redirect("/login");
     }
   });
 });
@@ -81,7 +81,7 @@ app.post("/login", function (req, res) {
     } else {
       if (foundUser) {
         if (foundUser.password === password) {
-          res.render("logIndex");
+          res.redirect("/logIndex");
         } else {
           alert("Username/Password incorrect.");
         }
